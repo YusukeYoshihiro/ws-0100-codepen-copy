@@ -1,18 +1,34 @@
-ul 
-    padding-left: 0
-    margin-left: 0
-    list-s
+.search-form-input
+    margin-left: 16px
+    width: 100%
+    font-size: 20px
+    font-weight: bold
+    background: #252830
+    border: 0
+
 .sidebar
     background: #1F1F26
-.sidebar-menu-sub-list
-    margin-bottom: 16px
-    a
+@media (max-width: 576px)
+    .sidebar
+        display: none
+
+.sidebar-menu a
         display: block
         padding-left: 16px
-.sidebar-menu-title 
+        &:hover
+            background: black
+
+
+.sidebar-menu-title
     font-size: .8rem
     margin-bottom: .2rem
     margin-left: 16px
-.sidebar-menu a 
-    display: block
-    padding-left: 16px
+
+.sidebar-menu-sub-list
+    margin-bottom: 16px
+
+.get-start-text
+    margin: .2em
+    font-size: .8em
+    text-align: center
+    color: #b7bbc8
